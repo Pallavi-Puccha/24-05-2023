@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <input placeholder="Enter name" id="username"/><br/>
+    <input type="password" placeholder="Enter password" name="password" id="password"/>
+    <p>
+        <input type="radio" name="gender" id="gendermale" value="Male"/>Male
+        <input type="radio" name="gender" id="genderfemale" value="Female"/>Female
+    </p>
+    <button onclick="store()">Submit</button>
+    <script>
+        function store(){
+            var userName=document.getElementById("username").value
+            // var password=document.getElementById("password").value
+            var male=document.getElementById("gendermale").checked
+            var female=document.getElementById("genderfemale").checked
+            var gender;
+            if(male==true)
+                gender="male"
+            else if(female==true)
+                gender="female"
+            else
+                gender='null'
+            console.log(userName)
+            // console.log(password)
+            console.log(gender)
+        }
+    </script>
+
+
+
+    <!-- <button onclick="demo()">Click</button>
+    <script> 
+        function demo(){
+            alert("on button click is appeared")
+        }
+    </script> -->
+</body>
+</html>
